@@ -3,15 +3,18 @@ Previous graph-based approaches in Aspect-Based Sentiment Analysis (ABSA) have d
 
 # data
 Datasets and pre-training data can be downloaded from the network disk. 
-（link: https://pan.baidu.com/s/1GhZtDcdDB-aiNMlLMLiDgA?pwd=aaai code: aaai）
+（Due to the double-blind policy, the network disk link will be provided after receipt.）
 
 #pretrain
-A trained syntactic encoder is provided in the network disk. If you want to train a syntax encoder based on new content, please refer to the following steps.
-1.Put data into the data folder.
-2.Modify the path in the pre-training code.
-3.Use the code in the ./pretrained-bert folder to generate a tokenizer for the new content.
-4.The pre-training process refers to this repository: https://github.com/circlePi/Pretraining-Yourself-Bert-From-Scratch
+A trained syntactic encoder is provided in the network disk. 
+（Due to the double-blind policy, the network disk link will be provided after receipt.）
+
+If you want to train a syntax encoder based on new content, please refer to the this repository: https://github.com/circlePi/Pretraining-Yourself-Bert-From-Scratch.
+
+
 
 #train
-You should first check whether the file path is correct. Download the universal Bert model (bert-base-uncased) through huggingface. Start train_rest.py to run.
+You should first check whether the file path is correct. Download the universal Bert model (bert-base-uncased) through huggingface. 
+
+Start train_rest.py to run.
 
