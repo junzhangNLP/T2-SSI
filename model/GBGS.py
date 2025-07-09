@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from transformers import RobertaModel, AutoModel
+from transformers import AutoModel
 from torch_geometric.nn import GCNConv
 import math
 torch.autograd.set_detect_anomaly(True)
@@ -14,7 +14,7 @@ import torch.nn.functional as F
 class LanguageEmbeddingLayer(nn.Module):
     def __init__(self):
         super(LanguageEmbeddingLayer, self).__init__()
-        self.bertmodel = RobertaModel.from_pretrained('./bert-base-uncased')
+        self.bertmodel = AutoModel.from_pretrained('./bert-base-uncased')
 
     def forward(self, bert_sent, bert_sent_mask):
         output = self.bertmodel(input_ids=bert_sent, attention_mask=bert_sent_mask)
