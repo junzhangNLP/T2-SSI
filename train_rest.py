@@ -145,7 +145,7 @@ def do_test(model, dataloader,criterion):
     eval_loss = round(eval_loss / len(dataloader), 4)
     eval_results = {}
     pred, true = torch.cat(y_pred), torch.cat(y_true)
-    results = calculate_metrics(pred, true)
+    results = calculate_absa_metrics(pred, true)
 
     eval_results = results
     eval_results['Loss'] = round(eval_loss, 4)
