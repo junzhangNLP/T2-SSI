@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from transformers import RobertaTokenizer, BertTokenizerFast
-from tools.tools import assign_gpu,setup_seed,calculate_metrics
+from tools.tools import assign_gpu,setup_seed,calculate_absa_metrics
 from model.GBGS import LF_DNN
 from torch import optim
 from tqdm import tqdm
