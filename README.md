@@ -3,7 +3,7 @@ Previous graph-based approaches in Aspect-Based Sentiment Analysis (ABSA) have d
 
 #pretrain
 A trained syntactic encoder is provided in the network disk. 
-（Due to the double-blind policy, the network disk link will be provided after receipt.）
+（For copyright protection, the dataset and the pre-training model weights will be released after the paper is received.）
 
 ./Pretraining-Bert file is used to train syntactic encoder.
 Use the data in ./data/Amason.rar to train the encoder.
