@@ -24,7 +24,7 @@ indices = list(range(len(dataset_train)))
 
 model_path = "./bert-base-uncased"
 G_model_path = "./encoder/bert"
-sentence_tokenizer = RobertaTokenizer.from_pretrained(model_path)
+sentence_tokenizer = BertTokenizer.from_pretrained(model_path)
 G_tokenizer = BertTokenizerFast.from_pretrained(G_model_path)
 
 def collate_fn(batch):
@@ -192,3 +192,4 @@ while True:
     if epochs == 30:
         break
     
+
